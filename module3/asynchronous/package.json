@@ -1,0 +1,25 @@
+{
+  "name": "asynchronous",
+  "version": "1.0.0",
+  "description": "asynchronous",
+  "main": "index.js",
+  "scripts": {
+    "callback": "node src/callback/index.js",
+    "callback:api": "node src/callback/api.js",
+    "promise": "node src/promise/index.js",
+    "promise:api": "node src/promise/api.js",
+    "async": "node src/async/index.js",
+    "async:api": "node src/async/api.js"
+  },
+  "keywords": [
+    "callback",
+    "promise",
+    "async",
+    "await"
+  ],
+  "author": "RAVN",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

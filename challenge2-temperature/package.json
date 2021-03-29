@@ -1,0 +1,22 @@
+{
+  "name": "challenge2-temperature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "node src/app.ts",
+    "start": "tsc && node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}

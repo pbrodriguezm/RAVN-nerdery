@@ -1,0 +1,902 @@
+[
+	{
+		"id": 1,
+		"city": "Denver",
+		"temperature": "1.14",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "CO",
+		"postal": "21638"
+	},
+	{
+		"id": 2,
+		"city": "Laramie",
+		"temperature": "1.83",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "WY",
+		"postal": "35900"
+	},
+	{
+		"id": 3,
+		"city": "Davenport",
+		"temperature": "9.64",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "IA",
+		"postal": "45828"
+	},
+	{
+		"id": 4,
+		"city": "Reading",
+		"temperature": "7.96",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "Pennsylvania",
+		"postal": "10787"
+	},
+	{
+		"id": 5,
+		"city": "Oklahoma City",
+		"temperature": "8.88",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "OK",
+		"postal": "94099"
+	},
+	{
+		"id": 6,
+		"city": "Great Falls",
+		"temperature": "0.32",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "MT",
+		"postal": "59543"
+	},
+	{
+		"id": 7,
+		"city": "Eugene",
+		"temperature": "1.14",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "OR",
+		"postal": "52693"
+	},
+	{
+		"id": 8,
+		"city": "Minneapolis",
+		"temperature": "4.94",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "MN",
+		"postal": "54846"
+	},
+	{
+		"id": 9,
+		"city": "Louisville",
+		"temperature": "4.42",
+		"time": "19/02/2021",
+		"units": "°C",
+		"region": "KY",
+		"postal": "21252"
+	},
+	{
+		"id": 10,
+		"city": "Springfield",
+		"temperature": "4.74",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "MA",
+		"postal": "44333"
+	},
+	{
+		"id": 11,
+		"city": "Nashville",
+		"temperature": "9.54",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "TN",
+		"postal": "55017"
+	},
+	{
+		"id": 12,
+		"city": "Spokane",
+		"temperature": "9.92",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "Washington",
+		"postal": "62436"
+	},
+	{
+		"id": 13,
+		"city": "Kailua",
+		"temperature": "1.20",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "Hawaii",
+		"postal": "34782"
+	},
+	{
+		"id": 14,
+		"city": "Tampa",
+		"temperature": "9.14",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "FL",
+		"postal": "10110"
+	},
+	{
+		"id": 15,
+		"city": "Madison",
+		"temperature": "5.63",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "Wisconsin",
+		"postal": "26905"
+	},
+	{
+		"id": 16,
+		"city": "Norman",
+		"temperature": "5.44",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "Oklahoma",
+		"postal": "49667"
+	},
+	{
+		"id": 17,
+		"city": "Lexington",
+		"temperature": "2.19",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "Kentucky",
+		"postal": "76856"
+	},
+	{
+		"id": 18,
+		"city": "Kenosha",
+		"temperature": "7.49",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "Wisconsin",
+		"postal": "63624"
+	},
+	{
+		"id": 19,
+		"city": "Knoxville",
+		"temperature": "4.47",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "TN",
+		"postal": "27709"
+	},
+	{
+		"id": 20,
+		"city": "Evansville",
+		"temperature": "6.85",
+		"time": "19/02/2021",
+		"units": "°C",
+		"region": "IN",
+		"postal": "42824"
+	},
+	{
+		"id": 21,
+		"city": "Racine",
+		"temperature": "8.43",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "WI",
+		"postal": "66292"
+	},
+	{
+		"id": 22,
+		"city": "Grand Island",
+		"temperature": "4.79",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "NE",
+		"postal": "56572"
+	},
+	{
+		"id": 23,
+		"city": "Idaho Falls",
+		"temperature": "8.69",
+		"time": "19/02/2021",
+		"units": "°C",
+		"region": "Idaho",
+		"postal": "20922"
+	},
+	{
+		"id": 24,
+		"city": "Lowell",
+		"temperature": "9.43",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "MA",
+		"postal": "13041"
+	},
+	{
+		"id": 25,
+		"city": "Lafayette",
+		"temperature": "3.00",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "Louisiana",
+		"postal": "87155"
+	},
+	{
+		"id": 26,
+		"city": "West Valley City",
+		"temperature": "3.23",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "UT",
+		"postal": "35442"
+	},
+	{
+		"id": 27,
+		"city": "Orlando",
+		"temperature": "3.68",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "Florida",
+		"postal": "92651"
+	},
+	{
+		"id": 28,
+		"city": "Bloomington",
+		"temperature": "8.49",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "Minnesota",
+		"postal": "27832"
+	},
+	{
+		"id": 29,
+		"city": "Jefferson City",
+		"temperature": "4.64",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Missouri",
+		"postal": "70316"
+	},
+	{
+		"id": 30,
+		"city": "Evansville",
+		"temperature": "9.36",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "IN",
+		"postal": "97433"
+	},
+	{
+		"id": 31,
+		"city": "Lansing",
+		"temperature": "3.59",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "MI",
+		"postal": "21066"
+	},
+	{
+		"id": 32,
+		"city": "Shreveport",
+		"temperature": "4.39",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "LA",
+		"postal": "24523"
+	},
+	{
+		"id": 33,
+		"city": "North Las Vegas",
+		"temperature": "2.00",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "Nevada",
+		"postal": "27944"
+	},
+	{
+		"id": 34,
+		"city": "North Las Vegas",
+		"temperature": "6.52",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Nevada",
+		"postal": "52606"
+	},
+	{
+		"id": 35,
+		"city": "Newark",
+		"temperature": "4.30",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "DE",
+		"postal": "85486"
+	},
+	{
+		"id": 36,
+		"city": "New Haven",
+		"temperature": "0.28",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "CT",
+		"postal": "29079"
+	},
+	{
+		"id": 37,
+		"city": "Philadelphia",
+		"temperature": "7.68",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "PA",
+		"postal": "14414"
+	},
+	{
+		"id": 38,
+		"city": "Rock Springs",
+		"temperature": "5.45",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "WY",
+		"postal": "28318"
+	},
+	{
+		"id": 39,
+		"city": "North Las Vegas",
+		"temperature": "4.82",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "Nevada",
+		"postal": "76612"
+	},
+	{
+		"id": 40,
+		"city": "Kailua",
+		"temperature": "2.43",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "HI",
+		"postal": "36475"
+	},
+	{
+		"id": 41,
+		"city": "Wichita",
+		"temperature": "2.71",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "KS",
+		"postal": "46210"
+	},
+	{
+		"id": 42,
+		"city": "Orlando",
+		"temperature": "2.66",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "FL",
+		"postal": "56963"
+	},
+	{
+		"id": 43,
+		"city": "Kansas City",
+		"temperature": "2.36",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "KS",
+		"postal": "37366"
+	},
+	{
+		"id": 44,
+		"city": "Olathe",
+		"temperature": "8.16",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "Kansas",
+		"postal": "91610"
+	},
+	{
+		"id": 45,
+		"city": "Provo",
+		"temperature": "7.62",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "UT",
+		"postal": "56137"
+	},
+	{
+		"id": 46,
+		"city": "Chicago",
+		"temperature": "7.73",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "Illinois",
+		"postal": "21541"
+	},
+	{
+		"id": 47,
+		"city": "Sacramento",
+		"temperature": "4.90",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "CA",
+		"postal": "90853"
+	},
+	{
+		"id": 48,
+		"city": "Bellevue",
+		"temperature": "0.55",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "WA",
+		"postal": "49408"
+	},
+	{
+		"id": 49,
+		"city": "Boise",
+		"temperature": "3.62",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "Idaho",
+		"postal": "21604"
+	},
+	{
+		"id": 50,
+		"city": "West Jordan",
+		"temperature": "4.70",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "Utah",
+		"postal": "67701"
+	},
+	{
+		"id": 51,
+		"city": "Tampa",
+		"temperature": "8.08",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Florida",
+		"postal": "35497"
+	},
+	{
+		"id": 52,
+		"city": "Reno",
+		"temperature": "7.75",
+		"time": "19/02/2021",
+		"units": "°C",
+		"region": "Nevada",
+		"postal": "13756"
+	},
+	{
+		"id": 53,
+		"city": "Provo",
+		"temperature": "0.76",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "Utah",
+		"postal": "42740"
+	},
+	{
+		"id": 54,
+		"city": "St. Petersburg",
+		"temperature": "3.21",
+		"time": "19/02/2021",
+		"units": "°C",
+		"region": "FL",
+		"postal": "82802"
+	},
+	{
+		"id": 55,
+		"city": "Shreveport",
+		"temperature": "3.03",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "Louisiana",
+		"postal": "96708"
+	},
+	{
+		"id": 56,
+		"city": "Kansas City",
+		"temperature": "0.22",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "KS",
+		"postal": "25562"
+	},
+	{
+		"id": 57,
+		"city": "Great Falls",
+		"temperature": "2.07",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Montana",
+		"postal": "15360"
+	},
+	{
+		"id": 58,
+		"city": "Hillsboro",
+		"temperature": "8.47",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "OR",
+		"postal": "14625"
+	},
+	{
+		"id": 59,
+		"city": "Tacoma",
+		"temperature": "5.02",
+		"time": "19/02/2021",
+		"units": "°C",
+		"region": "WA",
+		"postal": "18061"
+	},
+	{
+		"id": 60,
+		"city": "Baton Rouge",
+		"temperature": "1.24",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "LA",
+		"postal": "15777"
+	},
+	{
+		"id": 61,
+		"city": "Pittsburgh",
+		"temperature": "6.80",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "Pennsylvania",
+		"postal": "13852"
+	},
+	{
+		"id": 62,
+		"city": "Racine",
+		"temperature": "4.06",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "Wisconsin",
+		"postal": "28630"
+	},
+	{
+		"id": 63,
+		"city": "Gresham",
+		"temperature": "0.35",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Oregon",
+		"postal": "26422"
+	},
+	{
+		"id": 64,
+		"city": "Great Falls",
+		"temperature": "4.04",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Montana",
+		"postal": "39964"
+	},
+	{
+		"id": 65,
+		"city": "Mesa",
+		"temperature": "0.71",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "AZ",
+		"postal": "85628"
+	},
+	{
+		"id": 66,
+		"city": "Chattanooga",
+		"temperature": "5.75",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "Tennessee",
+		"postal": "44841"
+	},
+	{
+		"id": 67,
+		"city": "Bloomington",
+		"temperature": "5.95",
+		"time": "17/02/2021",
+		"units": "°C",
+		"region": "Minnesota",
+		"postal": "86404"
+	},
+	{
+		"id": 68,
+		"city": "Wilmington",
+		"temperature": "8.56",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "DE",
+		"postal": "13484"
+	},
+	{
+		"id": 69,
+		"city": "Idaho Falls",
+		"temperature": "9.70",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Idaho",
+		"postal": "11955"
+	},
+	{
+		"id": 70,
+		"city": "Broken Arrow",
+		"temperature": "1.83",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "Oklahoma",
+		"postal": "36360"
+	},
+	{
+		"id": 71,
+		"city": "South Portland",
+		"temperature": "4.84",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "ME",
+		"postal": "47019"
+	},
+	{
+		"id": 72,
+		"city": "Bellevue",
+		"temperature": "5.05",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "WA",
+		"postal": "81454"
+	},
+	{
+		"id": 73,
+		"city": "Lincoln",
+		"temperature": "1.88",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Nebraska",
+		"postal": "90831"
+	},
+	{
+		"id": 74,
+		"city": "Chesapeake",
+		"temperature": "9.34",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "VA",
+		"postal": "44739"
+	},
+	{
+		"id": 75,
+		"city": "Davenport",
+		"temperature": "7.97",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "Iowa",
+		"postal": "18467"
+	},
+	{
+		"id": 76,
+		"city": "Henderson",
+		"temperature": "3.44",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "NV",
+		"postal": "71908"
+	},
+	{
+		"id": 77,
+		"city": "Lexington",
+		"temperature": "7.67",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "Kentucky",
+		"postal": "33100"
+	},
+	{
+		"id": 78,
+		"city": "Columbus",
+		"temperature": "4.51",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "GA",
+		"postal": "66708"
+	},
+	{
+		"id": 79,
+		"city": "Burlington",
+		"temperature": "3.30",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Vermont",
+		"postal": "27113"
+	},
+	{
+		"id": 80,
+		"city": "Gary",
+		"temperature": "5.07",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "IN",
+		"postal": "78589"
+	},
+	{
+		"id": 81,
+		"city": "Indianapolis",
+		"temperature": "8.90",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "IN",
+		"postal": "50824"
+	},
+	{
+		"id": 82,
+		"city": "Waterbury",
+		"temperature": "5.48",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "Connecticut",
+		"postal": "21997"
+	},
+	{
+		"id": 83,
+		"city": "Ketchikan",
+		"temperature": "6.89",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "AK",
+		"postal": "99823"
+	},
+	{
+		"id": 84,
+		"city": "Richmond",
+		"temperature": "0.33",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "Virginia",
+		"postal": "22600"
+	},
+	{
+		"id": 85,
+		"city": "Birmingham",
+		"temperature": "0.25",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "AL",
+		"postal": "36676"
+	},
+	{
+		"id": 86,
+		"city": "Duluth",
+		"temperature": "2.00",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "MN",
+		"postal": "25899"
+	},
+	{
+		"id": 87,
+		"city": "Evansville",
+		"temperature": "5.03",
+		"time": "19/02/2021",
+		"units": "°C",
+		"region": "Indiana",
+		"postal": "27936"
+	},
+	{
+		"id": 88,
+		"city": "Kenosha",
+		"temperature": "6.84",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "WI",
+		"postal": "18512"
+	},
+	{
+		"id": 89,
+		"city": "Jonesboro",
+		"temperature": "2.43",
+		"time": "19/02/2021",
+		"units": "°C",
+		"region": "Arkansas",
+		"postal": "72246"
+	},
+	{
+		"id": 90,
+		"city": "Essex",
+		"temperature": "3.72",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "VT",
+		"postal": "78987"
+	},
+	{
+		"id": 91,
+		"city": "Reading",
+		"temperature": "6.07",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "PA",
+		"postal": "68998"
+	},
+	{
+		"id": 92,
+		"city": "Lafayette",
+		"temperature": "4.36",
+		"time": "19/02/2021",
+		"units": "°C",
+		"region": "Louisiana",
+		"postal": "22056"
+	},
+	{
+		"id": 93,
+		"city": "Cheyenne",
+		"temperature": "2.02",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "WY",
+		"postal": "32475"
+	},
+	{
+		"id": 94,
+		"city": "Green Bay",
+		"temperature": "9.40",
+		"time": "16/02/2021",
+		"units": "°C",
+		"region": "Wisconsin",
+		"postal": "29699"
+	},
+	{
+		"id": 95,
+		"city": "Dallas",
+		"temperature": "2.37",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "Texas",
+		"postal": "72242"
+	},
+	{
+		"id": 96,
+		"city": "Chattanooga",
+		"temperature": "7.40",
+		"time": "15/02/2021",
+		"units": "°C",
+		"region": "Tennessee",
+		"postal": "89136"
+	},
+	{
+		"id": 97,
+		"city": "Boston",
+		"temperature": "1.33",
+		"time": "20/02/2021",
+		"units": "°C",
+		"region": "Massachusetts",
+		"postal": "90966"
+	},
+	{
+		"id": 98,
+		"city": "Grand Island",
+		"temperature": "0.44",
+		"time": "18/02/2021",
+		"units": "°C",
+		"region": "Nebraska",
+		"postal": "87927"
+	},
+	{
+		"id": 99,
+		"city": "Glendale",
+		"temperature": "4.08",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "Arizona",
+		"postal": "85009"
+	},
+	{
+		"id": 100,
+		"city": "Mobile",
+		"temperature": "7.92",
+		"time": "14/02/2021",
+		"units": "°C",
+		"region": "Alabama",
+		"postal": "36587"
+	}
+]

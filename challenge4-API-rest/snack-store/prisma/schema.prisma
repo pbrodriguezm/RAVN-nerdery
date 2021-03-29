@@ -1,0 +1,42 @@
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:RAVN@localhost:5432/snack?schema=public"
+}
+generator client {
+  provider = "prisma-client-js"
+}
+
+model CLIENTS {
+  id       String  @id @db.VarChar(10)
+  name     String? @db.VarChar
+  password String? @db.VarChar
+  state    Int?
+  LIKES    LIKES[]
+}
+
+model LIKES {
+  idproduct String?   @db.Uuid
+  idclient  String?   @db.VarChar(10)
+  register  DateTime? @db.Timestamp(6)
+  ids       Int       @id @default(autoincrement())
+  CLIENTS   CLIENTS?  @relation(fields: [idclient], references: [id])
+  PRODUCTS  PRODUCTS? @relation(fields: [idproduct], references: [id])
+}
+
+model PRODUCTS {
+  id          String    @id @db.Uuid
+  name        String?   @db.VarChar
+  description String?   @db.VarChar
+  image       Float?
+  create      DateTime? @db.Timestamp(6)
+  LIKES       LIKES[]
+}
+
+model SALES {
+  idproduct String?   @db.Uuid
+  idclient  String?   @db.VarChar(8)
+  quantity  Int?
+  register  DateTime? @db.Timestamp(6)
+  amount    Decimal?  @db.Decimal(10, 2)
+  id        Int       @id @default(autoincrement())
+}
