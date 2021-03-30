@@ -7,19 +7,32 @@ datasource db {
   url      = "postgresql://postgres:RAVN@localhost:5432/snack?schema=public"
 }
 
+model CAR {
+  id        String    @id @db.Uuid
+  idproduct String?   @db.Uuid
+  idclient  String?   @db.VarChar(10)
+  quantity  Int?
+  register  DateTime? @db.Timestamp(6)
+  amount    Decimal?  @db.Decimal(10, 2)
+  CLIENTS   CLIENTS?  @relation(fields: [idclient], references: [id])
+  PRODUCTS  PRODUCTS? @relation(fields: [idproduct], references: [id])
+}
+
 model CLIENTS {
   id       String  @id @db.VarChar(10)
   name     String? @db.VarChar
   password String? @db.VarChar
   state    Int?
+  email    String? @db.VarChar
+  CAR      CAR[]
   LIKES    LIKES[]
 }
 
 model LIKES {
-  id        Int       @id @default(autoincrement())
   idproduct String?   @db.Uuid
   idclient  String?   @db.VarChar(10)
   register  DateTime? @db.Timestamp(6)
+  ids       Int       @id @default(autoincrement())
   CLIENTS   CLIENTS?  @relation(fields: [idclient], references: [id])
   PRODUCTS  PRODUCTS? @relation(fields: [idproduct], references: [id])
 }
@@ -28,8 +41,11 @@ model PRODUCTS {
   id          String    @id @db.Uuid
   name        String?   @db.VarChar
   description String?   @db.VarChar
-  image       Float?
+  state       Int?
   create      DateTime? @db.Timestamp(6)
+  image       String?   @db.VarChar
+  stock       Int       @default(100)
+  CAR         CAR[]
   LIKES       LIKES[]
 }
 
@@ -40,4 +56,5 @@ model SALES {
   register  DateTime? @db.Timestamp(6)
   amount    Decimal?  @db.Decimal(10, 2)
   id        Int       @id @default(autoincrement())
+  idcar     String    @db.Uuid
 }

@@ -1,5 +1,5 @@
-import { ProductsDto } from '../../use-cases/products/dtos'
+import { PRODUCTS } from '.prisma/client'
 
 export interface IProductsRepository {
-  find(): Promise<ProductsDto[]>
+  find(): Promise<PRODUCTS[]>
 }

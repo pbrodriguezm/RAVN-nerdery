@@ -4,6 +4,8 @@ import cors, { CorsOptions } from 'cors'
 import { HttpError } from 'http-errors'
 // import { IOCContainerInit } from '../../interface/ioc/container'
 import swaggerUi from 'swagger-ui-express'
+import jwt from 'jsonwebtoken'
+
 import logger, { expressLogger } from '../logger'
 import { apiRouter } from './router'
 import * as swaggerDocument from './swagger.json'
@@ -17,6 +19,9 @@ app.use(express.json())
 app.use(express.urlencoded())
 
 const whiteList = ['http://localhost:3000']
+const accessTokenSecret = 'ADMIN'
+const users = [{ username: 'admin', password: 'admin', role: 'admin' }]
+
 const corsOptionsDelegate = function handler(
   req: Request,
   callback: (err: Error | null, options?: CorsOptions) => void,
@@ -47,6 +52,24 @@ function errorHandler(
 }
 
 app.use(cors(corsOptionsDelegate))
+
+app.post('/login', (req, res) => {
+  const { username, password } = req.body
+  const user = users.find((u) => {
+    return u.username === username && u.password === password
+  })
+  if (user) {
+    const accessToken = jwt.sign(
+      { username: user.username, role: user.role },
+      accessTokenSecret,
+    )
+    res.json({
+      accessToken,
+    })
+  } else {
+    res.send('Username or password incorrect')
+  }
+})
 
 app.get('/api/v1/status', (req: Request, res: Response) => {
   res.json({ time: new Date() })
