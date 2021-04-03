@@ -38,15 +38,18 @@ model LIKES {
 }
 
 model PRODUCTS {
-  id          String    @id @db.Uuid
-  name        String?   @db.VarChar
-  description String?   @db.VarChar
-  state       Int?
-  create      DateTime? @db.Timestamp(6)
-  image       String?   @db.VarChar
-  stock       Int       @default(100)
-  CAR         CAR[]
-  LIKES       LIKES[]
+  id               String             @id @db.Uuid
+  name             String?            @db.VarChar
+  description      String?            @db.VarChar
+  state            Int?
+  create           DateTime?          @db.Timestamp(6)
+  image            String?            @db.VarChar
+  stock            Int                @default(100)
+  idcategory       Int
+  CATEGORIES       CATEGORIES         @relation(fields: [idcategory], references: [id])
+  CAR              CAR[]
+  LIKES            LIKES[]
+  REL_CAT_PRODUCTS REL_CAT_PRODUCTS[]
 }
 
 model SALES {
@@ -57,4 +60,21 @@ model SALES {
   amount    Decimal?  @db.Decimal(10, 2)
   id        Int       @id @default(autoincrement())
   idcar     String    @db.Uuid
+}
+
+model CATEGORIES {
+  id               Int                @id @default(autoincrement())
+  name             String?            @db.VarChar
+  status           Boolean?
+  PRODUCTS         PRODUCTS[]
+  REL_CAT_PRODUCTS REL_CAT_PRODUCTS[]
+}
+
+model REL_CAT_PRODUCTS {
+  idproduct    String     @db.Uuid
+  idcategories Int
+  CATEGORIES   CATEGORIES @relation(fields: [idcategories], references: [id])
+  PRODUCTS     PRODUCTS   @relation(fields: [idproduct], references: [id])
+
+  @@id([idproduct, idcategories])
 }

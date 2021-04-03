@@ -25,7 +25,15 @@ export async function deleteProducts(
 ): Promise<void> {
   const id: string = req.params.id
   const result = await DeleteProductsCase.deleteProducts(id)
-  res.status(200).send(result)
+  if (result.id) {
+    res.status(200).send(result)
+  } else {
+    if (Object.prototype.hasOwnProperty.call(result, 'code')) {
+      res.status(403).send(result)
+    } else {
+      res.status(404).send('{ error, colums detect error}')
+    }
+  }
 }
 
 export async function updateProducts(

@@ -4,7 +4,7 @@ import { IClientsRepository } from '../../../../application/contracts/repositori
 export class ClientsRespository implements IClientsRepository {
   constructor(private readonly prismaClient: PrismaClient) {}
 
-  find(): Promise<CLIENTS[]> {
+  findAll(): Promise<CLIENTS[]> {
     return this.prismaClient.cLIENTS.findMany()
   }
 }

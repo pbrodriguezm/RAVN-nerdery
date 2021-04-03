@@ -3,5 +3,13 @@ import * as FindClientsCase from '../../application/use-cases/clients/find-clien
 
 export async function findClients(req: Request, res: Response): Promise<void> {
   const result = await FindClientsCase.findAll()
-  res.status(200).send(result)
+  if (Array.isArray(result)) {
+    res.status(200).send(result)
+  } else {
+    if (Object.prototype.hasOwnProperty.call(result, 'code')) {
+      res.status(403).send(result)
+    } else {
+      res.status(404).send('{ error, colums detect error}')
+    }
+  }
 }

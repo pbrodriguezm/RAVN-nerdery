@@ -7,10 +7,11 @@ import swaggerUi from 'swagger-ui-express'
 import jwt from 'jsonwebtoken'
 
 import logger, { expressLogger } from '../logger'
+import config from '../../../config.jwt'
 import { apiRouter } from './router'
 import * as swaggerDocument from './swagger.json'
 
-const app = express()
+export const app = express()
 const PORT = process.env.API_PORT || 3000
 const ENVIROMENT = process.env.NODE_ENV || 'development'
 
@@ -19,7 +20,6 @@ app.use(express.json())
 app.use(express.urlencoded())
 
 const whiteList = ['http://localhost:3000']
-const accessTokenSecret = 'ADMIN'
 const users = [{ username: 'admin', password: 'admin', role: 'admin' }]
 
 const corsOptionsDelegate = function handler(
@@ -61,7 +61,7 @@ app.post('/login', (req, res) => {
   if (user) {
     const accessToken = jwt.sign(
       { username: user.username, role: user.role },
-      accessTokenSecret,
+      config.jwtSecret,
     )
     res.json({
       accessToken,

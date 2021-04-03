@@ -24,6 +24,14 @@
         {
             "name": "Clients",
             "description": "API for Clients in the system"
+        },
+        {
+            "name": "Products",
+            "description": "API for Products in the system"
+        },
+        {
+            "name": "Cars",
+            "description": "API for Cars in the system"
         }
     ],
     "consumes": [
