@@ -45,8 +45,6 @@ model PRODUCTS {
   create           DateTime?          @db.Timestamp(6)
   image            String?            @db.VarChar
   stock            Int                @default(100)
-  idcategory       Int
-  CATEGORIES       CATEGORIES         @relation(fields: [idcategory], references: [id])
   CAR              CAR[]
   LIKES            LIKES[]
   REL_CAT_PRODUCTS REL_CAT_PRODUCTS[]
@@ -66,7 +64,6 @@ model CATEGORIES {
   id               Int                @id @default(autoincrement())
   name             String?            @db.VarChar
   status           Boolean?
-  PRODUCTS         PRODUCTS[]
   REL_CAT_PRODUCTS REL_CAT_PRODUCTS[]
 }
 
@@ -77,4 +74,27 @@ model REL_CAT_PRODUCTS {
   PRODUCTS     PRODUCTS   @relation(fields: [idproduct], references: [id])
 
   @@id([idproduct, idcategories])
+}
+
+model USERS {
+  username String    @id @db.VarChar
+  password String?   @db.VarChar
+  name     String?   @db.VarChar
+  state    Int?
+  create   DateTime? @default(now()) @db.Time(6)
+  idrol    Int
+  ROLES    ROLES     @relation(fields: [idrol], references: [id])
+  STATES   STATES?   @relation(fields: [state], references: [id])
+}
+
+model ROLES {
+  id    Int     @id @default(autoincrement())
+  name  String? @db.VarChar
+  USERS USERS[]
+}
+
+model STATES {
+  id    Int     @id @default(autoincrement())
+  name  String? @db.VarChar
+  USERS USERS[]
 }

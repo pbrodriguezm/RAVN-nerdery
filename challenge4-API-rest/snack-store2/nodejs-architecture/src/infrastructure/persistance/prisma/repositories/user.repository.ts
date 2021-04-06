@@ -1,60 +1,56 @@
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient, USERS } from '@prisma/client'
 import { v4 as uuidv4 } from 'uuid'
 import createError from 'http-errors'
 import { IUserRepository } from '../../../../application/contracts/repositories'
-import {
-  CreateUserDto,
-  UpdateUserDto,
-  UserDto,
-} from '../../../../application/use-cases/users/dtos'
 
 export class UserRespository implements IUserRepository {
   constructor(private readonly prismaClient: PrismaClient) {}
 
-  create(params: CreateUserDto): Promise<UserDto> {
-    return this.prismaClient.user.create({
-      data: {
-        id: uuidv4(),
-        ...params,
-      },
-    })
-  }
-
-  find(): Promise<UserDto[]> {
-    return this.prismaClient.user.findMany()
-  }
-
-  async findOne(id: string): Promise<UserDto> {
-    const user = await this.prismaClient.user.findUnique({ where: { id } })
-
-    if (!user)
-      throw new createError.NotFound(`Couldn't find User with id = '${id}'`)
-
-    return user
-  }
-
-  async update(id: string, params: Partial<UpdateUserDto>): Promise<UserDto> {
+  create(params: USERS): Promise<USERS> {
+    params.idrol = Number(params.idrol)
+    params.state = Number(params.state)
     try {
-      const user = await this.prismaClient.user.update({
-        where: { id },
-        data: params,
+      return this.prismaClient.uSERS.create({
+        data: {
+          ...params,
+        },
       })
-
-      return user
     } catch (error) {
-      throw new createError.NotFound(`Couldn't find User with id = '${id}'`)
+      return error
     }
   }
 
-  async delete(id: string): Promise<UserDto> {
+  async find(id: string): Promise<USERS[]> {
     try {
-      const user = await this.prismaClient.user.delete({
-        where: { id },
+      return await this.prismaClient.uSERS.findMany({
+        where: {
+          username: id,
+        },
       })
-
-      return user
     } catch (error) {
-      throw new createError.NotFound(`Couldn't find User with id = '${id}'`)
+      return error
+    }
+  }
+
+  findAll(): Promise<USERS[]> {
+    return this.prismaClient.uSERS.findMany()
+  }
+
+  async auth(params: USERS): Promise<USERS> {
+    try {
+      const userResult: USERS = await this.prismaClient.uSERS
+        .findFirst({
+          where: {
+            username: params.username,
+            password: params.password,
+          },
+        })
+        .catch((error) => {
+          return error
+        })
+      return userResult
+    } catch (error) {
+      return error
     }
   }
 }
